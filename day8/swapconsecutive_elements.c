@@ -18,7 +18,7 @@ int main() {
         numbers[index + 1] = temp;
     }
 
-    printf("\nArray after swapping consecutive elements:\n");
+    printf("\n Array after swapping consecutive elements: \n");
     for (index = 0; index < count; index++) {
         printf("%d ", numbers[index]);
     }

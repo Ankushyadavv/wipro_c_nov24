@@ -1,7 +1,6 @@
-//Find sum of Even placed Odd digits in a number
 #include <stdio.h>
 #include <stdlib.h>
-
+// Find sum of even placed Even digits in a number
 int main(int argCount, char *args[])
 {
     int inputNumber = atoi(args[1]);
@@ -13,19 +12,19 @@ int main(int argCount, char *args[])
         inputNumber = inputNumber / 10;
         if (flip == 0)
         {
-            if (remainderDigit % 2 == 1)
+            if (remainderDigit % 2 == 0)
                 sumOfDigits1 += remainderDigit;
             flip = 1;
         }
         else
         {
-            if (remainderDigit % 2 == 1)
+            if (remainderDigit % 2 == 0)
                 sumOfDigits2 += remainderDigit;
             flip = 0;
         }
     }
     if (flip == 0)
-        printf("Sum of even placed odd digits is %d", sumOfDigits1);
+        printf("Sum of even placed Even digits is %d", sumOfDigits1);
     else
-        printf("Sum of even placed odd digits is %d", sumOfDigits2);
+        printf("Sum of even placed Even digits is %d", sumOfDigits2);
 }

@@ -1,4 +1,4 @@
-//Find sum of Odd placed Odd digits in a number
+
 #include <stdlib.h>
 // Find sum of Odd placed Even digits in a number
 int main(int argCount, char *args[])
